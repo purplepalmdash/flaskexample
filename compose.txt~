@@ -1,0 +1,10 @@
+version: '2'
+services:
+  web:
+    image: daocloud.io/virtualgroup/flaskexample:master-72afa34
+    ports:
+    - 5000:5000
+    restart: 'no'
+  redis:
+    image: redis:alpine
+
